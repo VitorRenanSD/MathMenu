@@ -28,9 +28,9 @@ while menu != 5:
 
     elif menu == 3:
         if n1 > n2:
-            print('The largest number is: {}'.format(n1))
+            print('The greatest number is: {}'.format(n1))
         elif n1 < n2:
-            print('The largest number is: {}'.format(n2))
+            print('The greatest number is: {}'.format(n2))
         else:
             print('The two numbers have the same value!')
         sleep(1)
