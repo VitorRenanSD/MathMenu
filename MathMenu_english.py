@@ -3,9 +3,7 @@ from time import sleep
 n1 = float(input('Enter the 1st number: '))
 n2 = float(input('Enter the 2nd number: '))
 
-menu = 0
-
-while menu != 5:
+while True:
     print('''\033[0;35m[1] ADD
 [2] MULTIPLY
 [3] LARGEST NUMBER
@@ -15,22 +13,22 @@ while menu != 5:
     menu = int(input('CHOSEN OPTION: '))
 
     if menu == 1:
-        print('{} + {} = {}'.format(n1, n2, n1+n2))
+        print(f'{n1} + {n2} = {n1+n2}')
         sleep(1)
         print('\033[0;31mReturning... \033[m')
         sleep(0.7)
     
     elif menu == 2:
-        print('{} x {} = {}'.format(n1, n2, n1*n2))
+        print(f'{n1} x {n2} = {n1*n2}')
         sleep(1)
         print('\033[0;31mReturning... \033[m')
         sleep(0.7)
 
     elif menu == 3:
         if n1 > n2:
-            print('The greatest number is: {}'.format(n1))
+            print(f'The greatest number is: {n1}')
         elif n1 < n2:
-            print('The greatest number is: {}'.format(n2))
+            print(f'The greatest number is: {n2}')
         else:
             print('The two numbers have the same value!')
         sleep(1)
@@ -43,6 +41,9 @@ while menu != 5:
         sleep(0.5)
         print('\033[0;31mReturning... \033[m')
         sleep(0.7)
+
+    elif menu == 5:
+        break
 
     elif menu != [1, 2, 3, 4, 5]:
         print('\033[0;31mChoose a valid option.')
