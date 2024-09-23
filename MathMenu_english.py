@@ -10,7 +10,7 @@ while True:
 [4] CHOOSE NEW NUMBERS
 [5] EXIT  \033[m''')
     sleep(0.6)
-    menu = int(input('CHOSEN OPTION: '))
+    menu = int(input('CHOOSE AN OPTION: '))
 
     if menu == 1:
         print(f'{n1} + {n2} = {n1+n2}')
